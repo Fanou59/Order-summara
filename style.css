@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Red Hat Display";
+    font-size: 16px;
+}
+
+html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(images/pattern-background-desktop.svg), #E0E8FF;
+    background-repeat: no-repeat;
+}
+
+header {
+    margin-bottom: 45px;
+}
+
+img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    background-color: white;
+    align-items: center;
+    border-radius: 20px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 0 calc(8px + 1.5625vw);
+    max-width: 350px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.75rem;
+    color: #1F2E55;
+    font-weight: 900;
+    margin-bottom: 17px;
+}
+
+p {
+    line-height: 26px;
+    color: #717FA6;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+section {
+    display: flex;
+    align-items: center;
+    background-color: #F7F9FF;
+    border-radius: 11px;
+    padding: 25px;
+    margin-bottom: 32px;
+    min-width: 279px;
+
+}
+
+section>img {
+    width: 48px;
+    margin-right: 20px;
+}
+
+.lien {
+    color: #382AE1;
+    font-weight: 700;
+    font-size: 0.875rem;
+}
+
+.lien a:hover {
+    color: #766CF1;
+}
+
+.bloc-txt {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.annual {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    color: #1F2E55;
+    font-weight: 700;
+}
+
+.price {
+    color: #717FA6;
+    margin: 0;
+}
+
+.bouton {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    background-color: #382AE1;
+    border: none;
+    color: white;
+    border-radius: 11px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    cursor: pointer;
+    filter: drop-shadow(0 20px 20px rgba(56, 42, 225, 0.2));
+
+}
+
+button:hover {
+    background-color: #766CF1;
+}
+
+.bouton a {
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 48px;
+    font-weight: 700;
+    font-size: 0.937rem;
+    ;
+    color: #717FA6;
+}
+
+.bouton a:hover {
+    color: #1F2E55;
+}
+
+@media only screen and (max-width:400px) {
+    * {
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 1.46rem;
+    }
+
+    h2 {
+        font-size: 0.93rem;
+    }
+
+    .price {
+        font-size: 1rem;
+    }
+
+    .lien a {
+        font-size: 0.86rem;
+    }
+
+}
